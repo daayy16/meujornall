@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./noticias.component.css']
 })
 export class NoticiasComponent implements OnInit {
- noticia: string[] = ["Notícia 1", "Notícia 2", "Notícia 3", "Notícia 4"];
+  noticia: string[] = ["Notícia 1", "Notícia 2", "Notícia 3", "Notícia 4"];
+  mostrarNoticia: boolean = true;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public esconderNoticia() {
+    this.mostrarNoticia = false;
   }
 
 }
