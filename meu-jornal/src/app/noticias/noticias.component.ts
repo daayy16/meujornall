@@ -17,5 +17,9 @@ export class NoticiasComponent implements OnInit {
   public esconderNoticia() {
     this.mostrarNoticia = false;
   }
+   
+  public voltarRow(){
+    this.mostrarNoticia = true;
+  }
 
 }
