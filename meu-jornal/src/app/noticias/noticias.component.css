@@ -1,0 +1,7 @@
+.tamanho {
+    width: 500px;
+    height: 333px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    border: 3px solid rgba(0, 0, 0, .4);
+}
