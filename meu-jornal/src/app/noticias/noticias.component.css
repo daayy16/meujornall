@@ -1,4 +1,5 @@
 .tamanho {
+    position: relative;
     width: 500px;
     height: 333px;
     margin-bottom: 20px;
