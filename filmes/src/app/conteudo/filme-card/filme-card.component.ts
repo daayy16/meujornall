@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Filme } from '../filme';
 
 @Component({
@@ -9,8 +9,14 @@ import { Filme } from '../filme';
 export class FilmeCardComponent {
 
   @Input() filme: Filme;
+  @Output() apaga = new EventEmitter<object>();
+
 
   constructor() { }
+
+  apagaCard(): void {
+    this.apaga.emit(this.filme);
+  }
 
 
 }
